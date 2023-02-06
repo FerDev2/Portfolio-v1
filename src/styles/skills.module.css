@@ -1,0 +1,244 @@
+.content{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 100vh;
+    background-color: #e0e1dd;
+}
+
+.content h2{
+    display: inline-flex;
+    font-size: 2.5rem;
+    margin-left: 250px;
+    align-items: center;
+    color: #778da9;
+}
+
+.content h2::before{
+    content: '';
+    width: 200px;
+    height: 5px;
+    left: 0;
+    background-color: #0d1b2a;
+    position: absolute;
+}
+
+.content h2::after{
+    content: 'skills';
+    color: #0d1b2a;
+    margin-left: 20px;
+}
+
+.group{
+    display: grid;
+    grid-template-columns: repeat(6, .5fr);
+    justify-items: center;
+    padding: 0 8rem;
+}
+
+.group svg{
+    filter: grayscale(200%);
+    width: 7rem;
+    transition: all .5s ease-in-out;
+}
+
+.group svg:hover {
+    filter: grayscale(0);
+    transition: all .5s ease-in-out;
+}
+
+/*BUTTON GROUP BACK TO FROM*/
+
+.buttons_group{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-self: center;
+}
+
+.buttons_group a{
+    width: 5rem;
+    border-radius: 50%;
+}
+
+.button_up{
+    justify-self: end;
+}
+
+.button_up button{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-color: #0d1b2a;
+    justify-self: center;
+}
+
+.button_up svg{
+    color: #e0e1dd;
+}
+
+.button_down button{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-color: #0d1b2a;
+    justify-self: center;
+}
+
+.button_down svg{
+    color: #e0e1dd;
+    
+}
+
+@media (max-width: 425px) {
+
+    .content{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10vh 70vh 20vh;
+        height: 100vh;
+        width: 100vw;
+        background-color: #e0e1dd;
+    }
+
+    .content h2{
+        display: flex;
+        font-size: 2.5rem;
+        margin-left: 140px;
+        align-items: center;
+        color: #778da9;
+    }
+
+    .content h2::before{
+        content: '';
+        display: flex;
+        width: 100px;
+        height: 5px;
+        left: 0;
+        background-color: #1b263b;
+        position: absolute;
+    }
+    
+    .content h2::after{
+        content: 'contact';
+        color: #0d1b2a;
+        margin-left: 20px;
+    }
+
+
+    .group{
+        display: grid;
+        grid-template-columns: repeat(6, .5fr);
+        justify-items: center;
+        padding: 0 3rem;
+    }
+    
+    .group svg{
+        filter: grayscale(200%);
+        width: 5rem;
+        transition: all .5s ease-in-out;
+    }
+    
+    .group svg:hover {
+        filter: grayscale(0);
+        transition: all .5s ease-in-out;
+    }
+
+    
+    .buttons_group{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        align-self: center;
+        width: 100vw;
+    }
+    
+    .buttons_group a{
+        width: 5rem;
+        border-radius: 50%;
+    }
+    
+    .button_up{
+        justify-self: end;
+    }
+    
+    .button_up button{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        background-color: #0d1b2a;
+        justify-self: center;
+    }
+    
+    .button_up svg{
+        color: #e0e1dd;
+    }
+    
+    .button_down button{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        background-color: #0d1b2a;
+        justify-self: center;
+    }
+    
+    .button_down svg{
+        color: #e0e1dd;
+        
+    }
+
+}
+
+@media (max-width: 375px){
+    
+    .content h2{
+        display: flex;
+        font-size: 2.5rem;
+        margin-left: 90px;
+        align-items: center;
+        color: #778da9;
+    }
+
+    .content h2::before{
+        content: '';
+        display: flex;
+        width: 50px;
+        height: 5px;
+        left: 0;
+        background-color: #1b263b;
+        position: absolute;
+    }
+    
+    .content h2::after{
+        content: 'contact';
+        color: #0d1b2a;
+        margin-left: 20px;
+    }
+
+    .group{
+        display: grid;
+        grid-template-columns: repeat(3, .5fr);
+        grid-template-rows: 18vh 18vh 18vh;
+        justify-items: center;
+        padding: 0 1rem;
+    }
+    
+    .group svg{
+        filter: grayscale(200%);
+        height: 4rem;
+        width: 4rem;
+        transition: all .5s ease-in-out;
+    }
+    
+    .group svg:hover {
+        filter: grayscale(0);
+        transition: all .5s ease-in-out;
+    }
+}
