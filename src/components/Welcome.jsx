@@ -3,9 +3,7 @@ import '../styles/port.css'
 import Home from './Home'
 import Skills from './Skills'
 import Projects from './Projects'
-import Education from './Education'
 import Contact from './Contact'
-import { Link } from 'react-scroll'
 import { useInView } from 'react-intersection-observer'
 
 
